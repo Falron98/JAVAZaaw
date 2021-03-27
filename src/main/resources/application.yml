@@ -1,0 +1,23 @@
+my:
+  custom:
+    property: Hello from application properties
+    random: default properties
+  radom: ABCABC
+
+---
+spring:
+  profiles:
+      active:
+        on-profile: JAZ
+my:
+  custom:
+    property: Hello from application properties JAZ
+
+---
+spring:
+  profiles:
+      active:
+        on-profile: myprofile
+my:
+  custom:
+    property: Bartek Krystowski
