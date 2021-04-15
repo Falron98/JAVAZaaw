@@ -8,6 +8,7 @@ public class MyFirstComponent {
         MySecondComponent mySecondComponent = (MySecondComponent) applicationContext.getBean("mySecondComponent");
         System.out.println(applicationContext.getDisplayName());
         mySecondComponent.helloMethod();
+
     }
     public void helloMethod() {
         System.out.println("Hello from MyFirstComponent.helloMethod");

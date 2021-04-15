@@ -3,21 +3,30 @@ my:
     property: Hello from application properties
     random: default properties
   radom: ABCABC
+  default: false
 
 ---
 spring:
-  profiles:
-      active:
-        on-profile: JAZ
+  config:
+      activate:
+        on-profile: jaz
 my:
   custom:
     property: Hello from application properties JAZ
 
 ---
 spring:
-  profiles:
-      active:
-        on-profile: myprofile
+  config:
+    activate:
+      on-profile: myprofile
 my:
   custom:
     property: Bartek Krystowski
+
+---
+spring:
+  config:
+    activate:
+      on-profile: homework
+my:
+  default: true

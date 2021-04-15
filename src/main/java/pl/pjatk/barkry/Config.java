@@ -1,6 +1,9 @@
 package pl.pjatk.barkry;
 
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty;
 import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Conditional;
 import org.springframework.context.annotation.Configuration;
 import java.util.List;
 
@@ -22,4 +25,12 @@ public class Config {
         System.out.println("Hello from defaultdata");
         return List.of("1", "2", "3", "4", "5");
     }
+
+    @Bean
+    @ConditionalOnProperty("my.default")
+    public Boolean homework(){
+        return true;
+    }
+
+
 }
