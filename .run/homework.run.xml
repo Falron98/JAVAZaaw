@@ -1,0 +1,11 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="homework" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+    <module name="barkry" />
+    <option name="SPRING_BOOT_MAIN_CLASS" value="pl.pjatk.barkry.BarkryApplication" />
+    <option name="ACTIVE_PROFILES" value="homework" />
+    <option name="ALTERNATIVE_JRE_PATH" />
+    <method v="2">
+      <option name="Make" enabled="true" />
+    </method>
+  </configuration>
+</component>

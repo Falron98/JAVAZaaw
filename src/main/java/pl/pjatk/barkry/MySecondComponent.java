@@ -10,12 +10,12 @@ import java.util.List;
 public class MySecondComponent {
     public MySecondComponent(POJO pojo,
                              List<String> defaultdata,
-                             POJO pojo2, Boolean homework,
+                             POJO pojo2,
                              @Value("${my.custom.property}") String mymessage,
                              @Value("${my.radom.property: default radom}") String radom,
                              @Value("${my.custom.random}") String mycustomrandom,
                              @Value("${my.radom}") String myradom,
-                             @Value("${my.default}") Boolean check
+                             @Value("${my.default}") Boolean homework
     ){
         System.out.println("Hello from MySecondComponent");
         pojo.soutMe();
