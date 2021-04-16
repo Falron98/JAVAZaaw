@@ -27,8 +27,8 @@ public class Config {
     }
 
     @Bean
-    @ConditionalOnProperty("my.default")
-    public Boolean homework(){
+    @ConditionalOnProperty(prefix = "my", name = "default", havingValue = "true")
+    public boolean homework(){
         return true;
     }
 
